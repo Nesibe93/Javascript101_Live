@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="utf-8" />
-    <title></title>
+    <title>Javascript</title>
     <script>
         /*javascript kodları head e de yazılabilir*/
     </script>
@@ -14,7 +14,7 @@
     <h1>Javascript dünyasına hoşgeldiniz...</h1>
     <br />
     <br />
-
+    <p id="Lorem" style="display:none"> ipsum dolor sit amet... </p> <!--Buraya scriptle ulaşabilmek için id yazıyoruz.-->
 
 
 
@@ -62,6 +62,29 @@
 
     <script>
 // Büyük küçük harf duyarlılığı vardır.
+        var x;
+        var X;
+
+        x = 5;
+        X = 15;
+
+        document.writeln("x :" + x);
+        document.writeln("X :" + X);
+    </script>
+
+    <script>
+// showmessage gibi davranan hazır fonksiyonu var 
+        alert("Bu bir mesajdır...");
+    </script>
+
+    <script>
+        // Javascript tarafından ekrandaki HTML elemanlarına erişim yapılabilir (innerHTML)
+        var icerik;
+        document.write("<br/><br/>");
+        icerik = document.getElementById("Lorem").innerHTML;
+        document.write(icerik);
+
+
     </script>
 </body>
 </html>
