@@ -14,8 +14,8 @@
     <h1>Javascript dünyasına hoşgeldiniz...</h1>
     <br />
     <br />
-    <p id="Lorem" style="display:none"> ipsum dolor sit amet... </p> <!--Buraya scriptle ulaşabilmek için id yazıyoruz.-->
-
+    <p id="Lorem"> ipsum dolor sit amet... </p> <!--Buraya scriptle ulaşabilmek için id yazıyoruz.-->
+     
 
 
 
@@ -85,6 +85,14 @@
         document.write(icerik);
 
 
+    </script>
+
+
+    <script>
+        var content;
+        content = "Deneme...Deneme";
+        // soru: yukarıda gözüken p tagimin içeriğini değişkenimin değeriyle değiştirme nasıl olur.
+        document.getElementById("Lorem").innerHTML = content;
     </script>
 </body>
 </html>
