@@ -1,0 +1,67 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script>
+        /*javascript kodları head e de yazılabilir*/
+    </script>
+</head>
+<body>
+    <!--Donuk HTML sayfalarını dinamikleştiren özellikler ekliyor -->
+    <!-- iki türlü kullanımı var...inline. diğeri de harici-->
+    <!--Not: Eğer sayfaların daha hızlı açılması isteniyorsa script blokları, son body etiketinin üzerinde tanımlanır-->
+    <h1>Javascript dünyasına hoşgeldiniz...</h1>
+    <br />
+    <br />
+
+
+
+
+
+    <!--Javascript kısmı-->
+    <script>
+        /*buraya program kodları gelecek*/
+        // Tek satırlık açıklama satırı
+        /*
+        ...
+        */
+
+        document.write("Hello World..."); // ";" le bitecek.
+        document.write("<br/><br/>");
+        document.write("Merhaba Dünya...");
+        document.write("<br/><br/>");
+
+        // Kurallara bağlı bir dil
+        // değişken tanımlama
+
+        var x = 0, y, toplam = 0;
+
+        x = x + 1;
+        toplam = toplam + x;
+        document.write("Toplam sonucu = " + toplam);
+
+
+    </script>
+
+    <script>
+        // Bloklardan oluşan bir yapıya sahiptir.
+        function topla()
+        { // Blok başlangıcı
+            var x, y;
+            var toplam;
+
+            x = 1;
+            y = 5;
+            toplam = x + y;
+            document.writeln("Toplamın sonucu: " + toplam);
+
+        } // BLok sonu
+
+    </script>
+
+    <script>
+// Büyük küçük harf duyarlılığı vardır.
+    </script>
+</body>
+</html>
