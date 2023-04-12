@@ -1,0 +1,64 @@
+﻿<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tablo Oluşturma</title>
+    <style>
+        /* Tablo stilini isteğe bağlı olarak belirleyebilirsiniz */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <button id="tabloOlusturBtn">Tablo Oluştur</button>
+    <div id="tabloAlani"></div>
+
+    <script>
+        // Buton tıklandığında çalışacak fonksiyon
+        function tabloOlustur() {
+            // Tablo elementini oluşturma
+            var tablo = document.createElement('table');
+
+            // Tablo başlıklarını (th) oluşturma
+            for (var i = 1; i <= 2; i++) {
+                var baslikSatir = document.createElement('tr');
+                var baslik1 = document.createElement('th');
+                baslik1.textContent = `Başlık${i}`;
+                baslikSatir.appendChild(baslik1);
+                var baslik2 = document.createElement('th');
+                baslik2.textContent = `Başlık${i}`;
+                baslikSatir.appendChild(baslik2);
+                tablo.appendChild(baslikSatir);
+            }
+            // Tablo içeriğini (td) oluşturma
+            for (var i = 1; i <= 5; i++) {
+                var satir = document.createElement('tr');
+                var hucre1 = document.createElement('td');
+                hucre1.textContent = 'Veri ' + i + ', 1';
+                satir.appendChild(hucre1);
+                var hucre2 = document.createElement('td');
+                hucre2.textContent = 'Veri ' + i + ', 2';
+                satir.appendChild(hucre2);
+                tablo.appendChild(satir);
+            }
+
+            // Tabloyu sayfaya ekleme
+            var tabloAlani = document.getElementById('tabloAlani');
+            tabloAlani.innerHTML = '';
+            tabloAlani.appendChild(tablo);
+        }
+
+        // Buton tıklandığında tabloOlustur() fonksiyonunu çağırma
+        var tabloOlusturBtn = document.getElementById('tabloOlusturBtn');
+        tabloOlusturBtn.addEventListener('click', tabloOlustur);
+    </script>
+</body>
+</html>

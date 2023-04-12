@@ -3,15 +3,46 @@
 <head>
     <meta charset="utf-8" />
     <title>Form Elements</title>
+    <script src="script/formelements.js"></script>
 </head>
 <body>
     <!--txt1 in içeriğini yaz butona basınca-->
     <input id="txt1" type="text" />
-    <input id="Button1" type="button" value="İçeriği yaz" onclick="txtWrite" />&nbsp;&nbsp;<b id="sonuc1"></b><br /><br/ >
+    <input id="Button1" type="button" value="İçeriği yaz" onclick="txtWrite()" />&nbsp;&nbsp;<b id="sonuc1"> </b> <br /><br// >
 
 
     <!--txt2 nin içeriğini butona basınca artırma-->
     <input id="txt2" type="text" />
+    <input id="Button2" type="button" value="Arttır" onclick="txtArttir()" />
+    <input id="Button3" type="button" value="Azalt" onclick="txtAzalt()" />
+
+    <input id="Button4" type="button" value="Tablo Çiz" onclick="tabloCiz()" />
+
+    <p id="sonuc2"></p>
+    <!--Ekranda bir buton olsun...basınca ekrana 200px genişliğinde 2 kolon 2 satır olacak şekilde bir tablo çizsin. tablonun geri plan rengi de gainsboro renginde olursa tadından yenmez-->
+    <!-- table için standart html taglerinden yararlanılabilir..copy paste yaparak uzun uzun uğraşmadan...-->
+
+   
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <h4>Çarpma</h4>
+       <!-- Ekrandan alınan iki sayıyı çarpan ve sonucu 3. bir html textbox içine yazan javascript fonksiyonunu yazınız...Bunun için tamamen ayrı bir javascript harici dosyası kullanabilirsiniz.-->
+    <input id="txt3" type="text" /> <br /><br />
+    <input id="txt4" type="text" /> <br /> <br/>
+    <input id="Button11" type="button" value="Çarpma yap" onclick="Carp()" /> <br /><br />
+    <input id="txt5" type="text" /> <br /> <br />
+
+    <h4>Bölme</h4>
+<!--    Bölme
+    Dikkat edilmesi gereken durum bölümün 0 olması durumu.-->
+    <input id="txt6" type="text" /> <br /><br />
+    <input id="txt7" type="text" /> <br /> <br/>
+    <input id="Button12" type="button" value="Bölme yap" onclick="Bol()" /> <br /><br />
+    <input id="txt8" type="text" /> <br />
 
 </body>
 </html>
